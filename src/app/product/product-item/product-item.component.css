@@ -12,9 +12,10 @@
     border-radius: 5px;
     padding: 5px;
     margin-bottom: 20px;
+   
 }
 .products .card img{
-    height: 250px;
+    height: 300px; 
     width: 100%;
 }
 
@@ -26,9 +27,9 @@
 }
 .products .card .box{
     display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 .products .card .box .price{
     color: #f63e4e;

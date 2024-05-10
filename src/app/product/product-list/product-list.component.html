@@ -19,12 +19,11 @@
         <p>Get The Best Headphone and Speaker Collections</p>
         <button>Shop Now</button>
     </section>
-        <div>
+        <div class="products">
             @for (product of products; track product.id){
-                <app-product-item [productInput]="product" (change)="test($event)"></app-product-item>
+                <app-product-item [productInput]="product" (changeItem)="test($event)"></app-product-item>
             }
         </div>
-   
 
    <!--products-->
    <!-- <section class="sec">
