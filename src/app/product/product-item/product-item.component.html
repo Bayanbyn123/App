@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="product-item.component.css">
+<section class="sec">
+    <h1 class="pheading">Latest products</h1>
+    <div class="products">
+        <!--card-->
+        <div class="card">
+            <div class="img"><img src="https://fakestoreapi.com/products.jpg" alt=""></div>
+            <div class="title">{{productInput}}</div>
+            <div class="box">
+                <div class="price">$ 50</div>
+                <a href=" " ><button class="btn1" (click)="delete()">Delete</button></a>
+                <a href="pay.html"><button class="btn">Buy Now</button></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- <div style="border: solid red 1px;">
+    <div>{{productInput.name}}</div>
+    <button (click)="delete()">delete</button>
+</div> -->
+

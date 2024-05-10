@@ -1,0 +1,60 @@
+<!-- <p>product-list works!</p> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>marking</title>
+    <link rel="stylesheet" href="product-list.component.css">
+
+    <nav class="navbar">
+        <div class="logo"><h1>ONLINE STOR</h1></div>
+        <ul class="menu">
+            <li><a href="" class="active">Home</a></li>
+            <li><a href="">Sign in</a></li>
+            <li><a href="">Login</a></li>
+        </ul>
+        <div class="menu-btn">
+            <i class="fa fa-bars"></i>
+        </div>
+    </nav>
+    <section class="content">
+        <h1> Explore Our Newest Electronic Devices </h1>
+        <p>Get The Best Headphone and Speaker Collections</p>
+        <button>Shop Now</button>
+    </section>
+        <div>
+            @for (product of products; track product.id){
+                <app-product-item [productInput]="product" (change)="test($event)"></app-product-item>
+            }
+        </div>
+   
+
+   <!--products-->
+   <!-- <section class="sec">
+    <div class="products">
+        <div class="card">
+            <div class="img"><img src="https://fakestoreapi.com/products.jpg" alt=""></div>
+            
+            <div class="title">Bluetooth headset</div>
+            <div class="box">
+                <div class="price">$ 50</div>
+                <a href="details.html"><button class="btn1">Delete</button></a>
+                <a href="pay.html"><button class="btn">Buy Now</button></a>
+            </div>
+        </div>
+    </div> -->
+
+   <footer>
+    <p>Copyrights at <a href="">ONLINE STOR</a></p>
+   </footer>
+
+
+
+
+<!-- <div>
+    @for (product of products; track product.id){
+        <app-product-item [productInput]="product" (change)="test($event)"></app-product-item>
+    }
+</div> -->
+
+
+
+
+
